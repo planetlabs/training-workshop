@@ -1,0 +1,13 @@
+planet
+requests
+numpy
+geojson
+pandas
+geopandas
+rasterio
+shapely
+geojsonio
+matplotlib
+mercantile
+scikit-image
+scikit-learn
