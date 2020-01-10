@@ -8,15 +8,15 @@ Below you will find environment set up instructions, decks and other learning re
 ## Getting the repo
 This is a public Planet repository so you don't have to SSH authenticate to clone to your local environment. You can simply use
 ```
-git clone git@gitlab.com:perazal/proserve-trainings.git
+git clone git@github.com:planetlabs/training-workshop.git
 ```
-In case you do have to authenticate, you'll have to make sure your SSH keys are added to your Gitlab profile. Only in case you **don't** have SSH keys already, generate them using
+In case you do have to authenticate, you'll have to make sure your SSH keys are added to your Github profile. Only in case you **don't** have SSH keys already, generate them using
 ```bash
 ssh-keygen -t rsa
 ```
 Press enter when asked if you want to save the keys to id_rsa and, if you want, enter a passphrase when asked to.
 
-Print out your keys, copy them and add them to your Gitlab's saved keys.
+Print out your keys, copy them and add them to your Github's saved keys.
 ```bash
 cat .ssh/id_rsa.pub
 ```
