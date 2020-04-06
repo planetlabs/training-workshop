@@ -1,0 +1,9 @@
+# Binary or system files
+*.csv
+*.xlsx
+*.pyc
+.~lock*
+*.docx
+.idea/
+__pycache__/
+.DS_Store
