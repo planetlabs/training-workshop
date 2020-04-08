@@ -30,10 +30,6 @@ You can also use your Planet API key on each call with the argument ```-k```
 planet -k YOUR_API_KEY command subcommand
 ```
 
-### FOR USING DUMMY ACCOUNTS
-#### username: cli*@workshop.com
-
-#### pwd: cliworkshop
 
 # Data API Examples
 ```bash
@@ -171,7 +167,7 @@ planet orders list | jq '.orders[] | "Name: " + .name + ". Status: " + .state '
 ### Set up order email notification
 If we do not want to check orders regularly, we can make use of email notification
 ```bash
-planet -k $K orders create --item-type PSScene4Band --bundle analytic_sr_udm2 --id 20191014_183506_0f34 --name ws-bandmath-email-1 --tools bandmath.json --email
+planet orders create --item-type PSScene4Band --bundle analytic_sr_udm2 --id 20191014_183506_0f34 --name ws-bandmath-email-1 --tools bandmath.json --email
 ```
 
 ### Download succesful order
@@ -183,7 +179,7 @@ planet orders download 175373e2-0fdf-4de4-b6d2-d54747905e25 --dest ws-bandmath-e
 ### Get order metadata
 We can also extract order metadata, for instance it's clipped geometry
 ```bash
-planet -k $K orders get 3bb87e78-a55c-40af-86b3-3767b427d0d5 | jq '{"type": "Feature", "geometry": .tools[].clip.aoi }' > aoi.json
+planet orders get 3bb87e78-a55c-40af-86b3-3767b427d0d5 | jq '{"type": "Feature", "geometry": .tools[].clip.aoi }' > aoi.json
 ```
 
 
