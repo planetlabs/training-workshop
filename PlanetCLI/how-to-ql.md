@@ -1,7 +1,7 @@
 # How to Generate QuickLooks (QL) using Planet APIs
 For this tutorial, we will cover a couple of options to generate downsampled/lower resolution imagery from PlanetScope scenes using Planet APIs.
 
-You will neet to have the latest version of the `Planet` Command Line Interface (Planet CLI) and `jq`, a library to parse JSON type data on a terminal.
+You will need to have the latest version of the `Planet` Command Line Interface (Planet CLI) and `jq`, a library to parse JSON type data on a terminal.
 
 Before using the CLI, make sure you are authenticated to access Planet APIs. You can do that either by setting an env variable named `PL_API_KEY` or by doing
 ```bash
