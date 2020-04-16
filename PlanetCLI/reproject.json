@@ -1,0 +1,9 @@
+[
+    {
+        "reproject": {
+            "projection": "EPSG:3857",
+            "kernel": "cubic",
+            "resolution": 60.0
+        }
+    }
+]
