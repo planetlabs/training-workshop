@@ -45,7 +45,7 @@ b. **Submit order**. Let's make an order using the `Reproject` raster tool. When
 ]
 ```
 
-Let's use the Planet CLI again to submit an order to the Orders API. For inpud IDs we use the `PSScene3Band` IDs copied on our previous step. We need to define the `bundle` or asset type we want to download, our order `name` and pass the name of our `tools` JSON file.
+Let's use the Planet CLI again to submit an order to the Orders API. For input IDs we use the `PSScene3Band` IDs copied on [step 1.a](#scenelist). We need to define the `bundle` or asset type we want to download, our order `name` and pass the name of our `tools` JSON file.
 
 ```bash
 planet orders create --item-type PSScene3Band --bundle visual --id 20200415_103259_46_105e,20200415_103257_44_105e,20200414_100952_0f3f,20200414_100954_0f3f,20200414_100953_0f3f,20200412_100858_1034,20200412_100856_1034,20200412_100857_1034 --name esa-demo-ql-reproject-1 --tools reproject.json | jq .
