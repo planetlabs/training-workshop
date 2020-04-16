@@ -31,7 +31,7 @@ Now, let's print all the scenes' IDs, concatenate them into a comma-separated st
 planet data search --geom savoy.geojson --item-type PSScene3Band --date acquired gte 2020-04-12 | jq -r '.features | map(.id) | join(",")'
 ```
 
-b. **Submit order**. let's make an order using the `Reproject` raster tool. When using the Planet CLI, the tool or tools chain need to be input as a `JSON` file. Let's create one containing the following JSON object. We can here define the resolution for our QL to be 60 m.
+b. **Submit order**. Let's make an order using the `Reproject` raster tool. When using the Planet CLI, the tool or tools chain need to be input as a `JSON` file. Let's create one containing the following JSON object. We can here define the resolution for our QL to be 60 m.
 
 ```json
 [
@@ -60,6 +60,8 @@ d. **Download order**. Once an order's `status` has changed to `success`, we can
 ```bash
 planet -v orders download cd79dfb4-7139-4a33-a096-9848c5bc80a8 --dest esa-demo-orders --quiet
 ```
+All of the previous steps can be streamlined and automated using a Python script, whihc allows for more scalability and less human interaction.
+
 Now, we can visualise our QL on QGIS or any other GIS software.
 
 <img align="center" alt="" src="imgs/qgis-repro.png" />
