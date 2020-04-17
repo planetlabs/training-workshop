@@ -1,7 +1,7 @@
 # How to Generate QuickLooks (QL) using Planet APIs
 For this tutorial, we will cover a couple of options to generate downsampled/lower resolution imagery from PlanetScope scenes using Planet APIs.
 
-You will neet to have the latest version of the `Planet` Command Line Interface (Planet CLI) and `jq`, a library to parse JSON type data on a terminal.
+You will need to have the latest version of the `Planet` Command Line Interface (Planet CLI) and `jq`, a library to parse JSON type data on a terminal.
 
 Before using the CLI, make sure you are authenticated to access Planet APIs. You can do that either by setting an env variable named `PL_API_KEY` or by doing
 ```bash
@@ -31,7 +31,7 @@ Now, let's print all the scenes' IDs, concatenate them into a comma-separated st
 planet data search --geom savoy.geojson --item-type PSScene3Band --date acquired gte 2020-04-12 | jq -r '.features | map(.id) | join(",")'
 ```
 
-b. **Submit order**. let's make an order using the `Reproject` raster tool. When using the Planet CLI, the tool or tools chain need to be input as a `JSON` file. Let's create one containing the following JSON object. We can here define the resolution for our QL to be 60 m.
+b. **Submit order**. Let's make an order using the `Reproject` raster tool. When using the Planet CLI, the tool or tools chain need to be input as a `JSON` file. Let's create one containing the following JSON object. We can here define the resolution for our QL to be 60 m.
 
 ```json
 [
@@ -45,7 +45,7 @@ b. **Submit order**. let's make an order using the `Reproject` raster tool. When
 ]
 ```
 
-Let's use the Planet CLI again to submit an order to the Orders API. For inpud IDs we use the `PSScene3Band` IDs copied on our previous step. We need to define the `bundle` or asset type we want to download, our order `name` and pass the name of our `tools` JSON file.
+Let's use the Planet CLI again to submit an order to the Orders API. For input IDs we use the `PSScene3Band` IDs copied on [step 1.a](#scenelist). We need to define the `bundle` or asset type we want to download, our order `name` and pass the name of our `tools` JSON file.
 
 ```bash
 planet orders create --item-type PSScene3Band --bundle visual --id 20200415_103259_46_105e,20200415_103257_44_105e,20200414_100952_0f3f,20200414_100954_0f3f,20200414_100953_0f3f,20200412_100858_1034,20200412_100856_1034,20200412_100857_1034 --name esa-demo-ql-reproject-1 --tools reproject.json | jq .
@@ -60,6 +60,8 @@ d. **Download order**. Once an order's `status` has changed to `success`, we can
 ```bash
 planet -v orders download cd79dfb4-7139-4a33-a096-9848c5bc80a8 --dest esa-demo-orders --quiet
 ```
+All of the previous steps can be streamlined and automated using a Python script, whihc allows for more scalability and less human interaction.
+
 Now, we can visualise our QL on QGIS or any other GIS software.
 
 <img align="center" alt="" src="imgs/qgis-repro.png" />
