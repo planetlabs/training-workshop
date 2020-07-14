@@ -1,15 +1,15 @@
 # Planet training workshop
 
-This repo contains all materials used on Planet's training workshop for Bahrain Defense Force. 
-Below you will find environment set up instructions, decks and other learning resources to have you started on using Planet's APIs and tools. 
+This repo contains all materials used on Planet's training workshop for Bahrain Defense Force.
+Below you will find environment set up instructions, decks and other learning resources to have you started on using Planet's APIs and tools.
 
 # Development Environment Setup
 
 ## The Very Basics
-Let's make sure you are set up with all the tools that we need to follow along on the excercises to be covered in this training. 
+Let's make sure you are set up with all the tools that we need to follow along on the excercises to be covered in this training.
 
 * [Python 3.7](https://www.python.org/downloads/release/python-377/) <br>
-You will need to download the installer for your specific OS (32 or 64 bits). When installing, make sure the box "_Add Python to Path_" is checked. 
+You will need to download the installer for your specific OS (32 or 64 bits). When installing, make sure the box "_Add Python to Path_" is checked.
 * [Git](https://git-scm.com/downloads)
 
 
@@ -24,7 +24,7 @@ python --version
 
 If you are on a Windows machine, you will need to install.
 * [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7) - A more powerful shell than the normal MSDOS in Windows
-* [Chocolatey](https://chocolatey.org/install) - Windows package manager
+* [Chocolatey](https://chocolatey.org/docs/installation) - Windows package manager
 
 * Check that `choco` is installed by installing `jq` and `git`
 ```bash
@@ -99,7 +99,7 @@ Some useful links:
 * [Tasking API docs](https://developers.planet.com/docs/tasking/)
 * [Public APIs changelog](https://developers.planet.com/changelog/)
 * [Planet Python Client](https://github.com/planetlabs/planet-client-python)
-* [Planet integrations (QGIS plug-in)](https://developers.planet.com/integrations/) 
+* [Planet integrations (QGIS plug-in)](https://developers.planet.com/integrations/)
 * [Quickstart guides](https://developers.planet.com/docs/quickstart/)
 * [Planet school](https://developers.planet.com/planetschool/)
 * [Jupyter notebooks](https://github.com/planetlabs/notebooks)
