@@ -1,6 +1,6 @@
 # Planet training workshop
 
-This repo contains all materials used on Planet's training workshop for Bahrain Defense Force. 
+This repo contains all materials used on Planet's training workshop used by Professional Services. 
 Below you will find environment set up instructions, decks and other learning resources to have you started on using Planet's APIs and tools. 
 
 # Development Environment Setup
