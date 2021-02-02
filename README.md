@@ -1,6 +1,6 @@
 # Planet training workshop
 
-This repo contains all materials used on Planet's training workshop by Professional Services. 
+This repo contains all materials used on Planet's training workshop by Professional Services. A lot of the notebooks in here are expanded and customized versions of Planet's official developer resources, which you can find in [here](https://github.com/planetlabs/notebooks).
 Below you will find environment set up instructions, decks and other learning resources to have you started on using Planet's APIs and tools. 
 
 # Development Environment Setup
