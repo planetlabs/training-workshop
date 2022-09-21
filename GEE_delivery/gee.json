@@ -1,0 +1,6 @@
+{
+        "google_earth_engine": {
+            "project": "planet-services-staging",
+            "collection": "riyadh-demo"
+        }
+    }
