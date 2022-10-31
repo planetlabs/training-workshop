@@ -11,3 +11,5 @@ matplotlib
 mercantile
 scikit-image
 scikit-learn
+requests_toolbelt
+rasterio

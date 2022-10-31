@@ -13,7 +13,7 @@ You will need to download the installer for your specific OS (32 or 64 bits). Wh
 * [Git](https://git-scm.com/downloads)
 
 
-If you want a very complete but heavier Python installation, checkout [Anaconda](https://docs.anaconda.com/anaconda/install/) too.
+We recommend to download the very complete but heavier Python distribution [Anaconda](https://docs.anaconda.com/anaconda/install/), instead. With Anaconda, it is a lot easier to install some of the required geospatial libraries than when using the pure Python distribution.
 
 Let's test if our basic set up is working.
 
@@ -56,8 +56,8 @@ cat .ssh/id_rsa.pub
 ## Useful libraries
 The following tools are regularly used in Planet School's guides:
 
-* cURL
-* GDAL
+* [cURL](https://curl.se/)
+* [GDAL](https://gdal.org/)
 * [requests](https://2.python-requests.org//en/master/)
 * [retrying](https://pypi.org/project/retrying/)
 * [jq](https://stedolan.github.io/jq/)
@@ -72,7 +72,14 @@ If you choose to follow along with code here, you may find it useful to install 
 pip install -r requirements.txt
 ```
 
-In Windows, some of these libraries (GDAL, Rasterio, Fiona, among others) might need to be installed directly using `wheel` installing files. You can grab the version needed for your OS easily in [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/).
+or when using the Anaconda distribution
+```bash
+conda install --file requirements.txt
+```
+
+<u>Important notes specifically for Windows users:</u>
+<br>
+In Windows, it is a lot easier to install the core geospatial software libraries (GDAL, Rasterio, Fiona, among others) using Anaconda's package manager Conda than the standard Pip. [Here](https://mapscaping.com/python-environment-for-geospatial-programming/) is a detailed guide on how to set up your Python environment for geospatial programming using Anaconda. If you do chose to use the base installation of Python instead, we recommend to install these geospatial software packages directly using `wheel` installing files. You can grab the version needed for your OS easily in [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/).
 
 
 ## Testing the set up
@@ -85,6 +92,11 @@ But remember, we can always install new packages simply using:
 ```bash
 pip install PACKAGE_NAME
 ```
+or when using Anaconda
+```bash
+conda install PACKAGE_NAME
+```
+
 
 
 # Learning resources
