@@ -8,7 +8,7 @@ Below you will find environment set up instructions, decks and other learning re
 ## Option 1: (recommended): Run in Google Colab
 Interact directly with this repo's Jupyter Notebooks by running them in Google Colab.
 
-Each Notebook will have its own "Open in Colab" button: once running on Colab, you'll need to run a quick setup cell in each notebook (this will install prerequisites and download data into your Colab workspace). You can also choose to make a copy of the Notebook in your own Google Drive, if you want to save any changes you make (not required for this workshop).
+Some of the Notebooks will have their own "Open in Colab" button: once running on Colab, you'll need to run a quick setup cell in each notebook (this will install prerequisites and download data into your Colab workspace). You can also choose to make a copy of the Notebook in your own Google Drive, if you want to save any changes you make (not required for this workshop).
 
 
 ## Option 2: Run local Jupyter instance
